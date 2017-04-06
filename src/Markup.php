@@ -15,7 +15,7 @@ abstract class Markup
 
     const META_ATTR = 'property';
 
-    const PREFIX = 'bb';
+    const PREFIX = 'barnebys';
 
     /**
      * @param string $prefix
