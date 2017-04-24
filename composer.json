@@ -9,10 +9,15 @@
             "email": "johan.johansson@barnebys.com"
         }
     ],
-    "require": {},
+    "require": {
+        "moneyphp/iso-currencies": "^3.0"
+    },
     "autoload": {
         "psr-4": {
             "Barnebys\\Protocol\\": "src/"
         }
+    },
+    "scripts": {
+        "update-currencies": "cp vendor/moneyphp/iso-currencies/resources/current.php resources/currency.php"
     }
 }

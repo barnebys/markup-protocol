@@ -17,6 +17,8 @@ abstract class Markup
 
     const PREFIX = 'barnebys';
 
+    const SECTION = null;
+
     /**
      * @param string $prefix
      * @return string
@@ -28,10 +30,19 @@ abstract class Markup
         foreach (get_object_vars($this) as $property => $value) {
             if(is_null($value)) continue;
 
-            $content .= '<meta ' . self::META_ATTR . '="' . $prefix;
-            if ( is_string($property) && !empty($property) )
-                $content .= ':' . htmlspecialchars( $property );
-            $content .= '" content="' . htmlspecialchars($value) . '">' . PHP_EOL;
+            if($value instanceof Markup) {
+                $content .= $value;
+            } else {
+
+                if(!is_null($this::SECTION)) {
+                    $property = $this::SECTION . ':' . $property;
+                }
+
+                $content .= '<meta ' . self::META_ATTR . '="' . $prefix;
+                if ( is_string($property) && !empty($property) )
+                    $content .= ':' . htmlspecialchars( $property );
+                $content .= '" content="' . htmlspecialchars($value) . '">' . PHP_EOL;
+            }
         }
 
         return $content;
