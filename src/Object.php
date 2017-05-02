@@ -87,7 +87,7 @@ class Object extends  Markup {
 
     public function setSold($sold)
     {
-        $this->sold = (bool) $sold;
+        $this->sold = intval($sold);
 
         return $this;
     }

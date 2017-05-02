@@ -13,6 +13,7 @@ $object ->setTitle('Rolex 1956')
         ->setURL('http://test.com/lot/1234')
         ->setImage('http://test.com/lot/1234.jpg')
         ->setCategory('watches')
+        ->setSold(false)
         ->setPrice(new Price(150, null, 'EUR'));
 
 echo $object;
