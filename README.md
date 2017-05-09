@@ -1,10 +1,12 @@
+[![Build Status](https://travis-ci.org/barnebys/markup-protocol.svg?branch=master)](https://travis-ci.org/barnebys/markup-protocol)
+
 # Barnebys Markup Protocol
 
 This library is a tool to generate [Barnebys Markup Tags](https://dev.bbys.io/) with PHP.
 
 ## Requirements 
 
-> PHP >= 5.3
+> PHP >= 5.6
 
 ## Installation
 
