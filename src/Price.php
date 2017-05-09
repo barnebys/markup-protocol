@@ -36,7 +36,9 @@ class Price extends Markup {
 
     public function setBid($bid)
     {
-        $this->bid = (float) $bid;
+        if (!is_null($bid)) {
+            $this->bid = (float) $bid;
+        }
 
         return $this;
     }

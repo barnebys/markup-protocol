@@ -2,6 +2,11 @@
     "name": "barnebys/markup-protocol",
     "description": "Barnebys Markup Protocol enhances information associated with an auction item on a webpage through key-value pairs included as <meta> elements in your HTML.",
     "type": "library",
+    "keywords": [
+        "barnebys",
+        "auctions",
+        "markup"
+    ],
     "license": "Apache 2.0",
     "authors": [
         {
@@ -12,9 +17,17 @@
     "require": {
         "moneyphp/iso-currencies": "^3.0"
     },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    },
     "autoload": {
         "psr-4": {
             "Barnebys\\Protocol\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Barnebys\\Tests\\": "tests/src"
         }
     },
     "scripts": {
