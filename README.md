@@ -14,7 +14,7 @@ This library is a tool to generate [Barnebys Markup Tags](https://dev.bbys.io/) 
 
 The recommended way is to use [composer](https://www.google.se/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=0ahUKEwiAjrXw6dDTAhVNZlAKHb06CKwQFgg7MAE&url=https%3A%2F%2Fgetcomposer.org%2F&usg=AFQjCNH7QQE7wICZatZPhYJLbpp9LfGRww) 
 
-```composer require "barnebys/markup-protocol```
+```composer require barnebys/markup-protocol```
 
 If your project does not support composer, you can either clone the project on GitHub or download
 the package from here. You will then have to manually add the library to your project.
@@ -88,7 +88,6 @@ Outputs
 <meta property="barnebys:image" content="http://test.com/lot/1234.jpg">
 <meta property="barnebys:category" content="watches">
 <meta property="barnebys:price:amount" content="150">
-<meta property="barnebys:price:bid" content="0">
 <meta property="barnebys:price:currency" content="EUR">
 <meta property="barnebys:sold" content="0">
 
