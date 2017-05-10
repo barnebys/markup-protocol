@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/barnebys/markup-protocol.svg?branch=master)](https://travis-ci.org/barnebys/markup-protocol)
+[![Coverage Status](https://coveralls.io/repos/github/barnebys/markup-protocol/badge.svg?branch=master)](https://coveralls.io/github/barnebys/markup-protocol?branch=master)
 
 # Barnebys Markup Protocol
 
