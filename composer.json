@@ -14,11 +14,9 @@
             "email": "johan.johansson@barnebys.com"
         }
     ],
-    "require": {
-        "moneyphp/iso-currencies": "^3.0"
-    },
     "require-dev": {
-        "phpunit/phpunit": "^5.7"
+        "phpunit/phpunit": "^5.7",
+        "moneyphp/iso-currencies": "^3.0"
     },
     "autoload": {
         "psr-4": {
